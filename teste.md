@@ -6,10 +6,11 @@ O Script 1 tem como objetivo iniciar o comando que você deseja em todos os serv
 
 ### Passos:
 
-- Realizar o comando "git clone" dos repositórios que estão descritos em "Lista de Serviços" no script.
-- Crie um arquivo chamado "start_containers.sh" dentro do repositório "2023-2-CAPJu-Doc" e cole o script.
-- Escreva o comando que você deseja no tópico "Inicia o serviço de configuração" (O comando "docker-compose up -d" é apenas um exemplo de comando, você escolhe qual comando você deseja).
+- Realizar o comando "git clone" dos repositórios que estão descritos em "Lista de Serviços" no script
+- Crie um arquivo chamado "start_containers.sh" dentro do repositório "2023-2-CAPJu-Doc" e cole o script
+- Escreva o comando que você deseja no tópico "Inicia o serviço de configuração" (O comando "docker-compose up -d" é apenas um exemplo de comando, você escolhe qual o comando que você deseja)
 
+```shell
 # !/bin/bash
 
 # Lista de serviços.
@@ -40,3 +41,4 @@ for service in "${services[@]}"; do
     cd ..
   fi
 done
+```
